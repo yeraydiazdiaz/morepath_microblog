@@ -9,6 +9,7 @@ setup(
     packages=find_packages(),
     install_requires=[
         'morepath',
-        'more.jinja2'
+        'more.jinja2',
+        'wtforms'
     ]
 )
