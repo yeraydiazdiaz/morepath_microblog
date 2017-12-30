@@ -12,7 +12,7 @@ def root_path(self):
     return Root()
 
 
-@App.view(model=Root)
+@App.html(model=Root, template='template.jinja2')
 def hello_world(self, request):
     """View displaying the root instance."""
-    return "Hello world!"
+    return {'name': 'Morepath'}

@@ -7,5 +7,8 @@ setup(
     author='Morepath developer',
     author_email='you@example.com',
     packages=find_packages(),
-    install_requires=['morepath']
+    install_requires=[
+        'morepath',
+        'more.jinja2'
+    ]
 )
