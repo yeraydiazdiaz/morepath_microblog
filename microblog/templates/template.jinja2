@@ -1,7 +1,7 @@
 {% extends "base.jinja2" %}
-
 {% block title %}Home{% endblock %}
 {% block content %}
-<h1>Welcome to {{ name }}</h1>
-<a href={{ login_link }}>Login</a>
+<h1>Welcome to {{ name }}{% if identity.userid %}, {{ identity.userid }}{% endif %}</h1>
+<a href={{ login_link }}>
+{% if not identity.userid %}Login{% else %}Logout{% endif %}</a>
 {% endblock %}
