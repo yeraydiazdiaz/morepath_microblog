@@ -1,0 +1,5 @@
+{% extends "base.jinja2" %}
+{% block title %}Home{% endblock %}
+{% block content %}
+<h1>Welcome{% if name %}, {{ name }}{% endif %}</h1>
+{% endblock %}
